@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        function maincounter(){
+            let count=0;
+            return function();
+            {
+                return count++;
+            };
+        }
+        let counter=maincounter();
+        alert(counter());
+        alert(counter());
+        alert(counter());
+    </script>
+</html>

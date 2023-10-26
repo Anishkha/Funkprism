@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FUNKPRISM</title>
+    </head>
+    <style>
+        .fpp{
+            background-image: url("part.jpg");
+            position: absolute;
+    bottom: 0;
+    right: 0%;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    background-size: 100%;
+    background-position: center;
+    z-index: -1;
+        }
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #13b19e71;
+}
+.funk{
+    font-size: 130%;
+    font-family: fantasy;
+}
+.form {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:aliceblue;
+  position: absolute;
+  right: 0;
+  margin: 50px;
+  max-width: 300px;
+  padding: 16px;
+  opacity:1;
+}
+input[type=text], input[type=number] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  opacity:0.6;
+}
+
+input[type=text]:focus, input[type=number]:focus {
+  outline: none;
+}
+
+.btn {
+  background-color: #e8eaef;
+  color: rgb(79, 19, 175);
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.6;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+    </style>
+    <body>
+        <div class="fpp"></div>
+        <ul>
+            <div class="funk"><li><a href="funkprism">Funkprism</a></li></div>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+            <li><a href="#about" class="split">About</a></li>
+          </ul>
+          <form>
+            <div class="form">
+                      <h1>Login</h1>
+                      <label for="name"><b>Name</b></label>
+                      <input type="text" placeholder="Enter name" name="name" required>
+                  
+                      <label for="email"><b>Email</b></label>
+                      <input type="text" placeholder="Enter Email" name="email" required>
+                  
+                      <label for="num"><b>Phone number</b></label>
+                      <input type="number" placeholder="Enter number" name="num" required>
+                  
+                      <button type="submit" class="btn">Login</button>
+            </div>
+          </form>
+    </body>

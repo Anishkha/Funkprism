@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.total{
+background-color: black;
+background-size: cover;
+background-size: 100%;
+padding-top: 50px;
+}
+.grid{
+    display: grid;
+            grid-template-columns: auto auto;
+            background-size: cover;
+            background-color: black;
+            padding: 50px;
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  align:left;
+  margin-left:80px;
+  margin-top:40px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 0px;
+  width: 0px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.about{
+    font-size:medium;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align:right;
+  width: 600px;
+  height:200px:
+  padding: 20px;
+  color: #f2f2f2;
+  border: 5px rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+  margin-top:20px;
+  margin-left:180px;
+}
+</style>
+</head>
+<body>
+<div class="total">
+<div class="grid">
+    <div class="gridit">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="singer2.jpg" width="80%" height="50%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="singer5.jpg" width="80%" height="50%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="singer4.jpg" width="80%" height="50%">
+</div>
+</div>
+    
+<br>
+
+
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span></div>
+  <div class="gridit"><div class="about"><h1><center><b>ABOUT</b></center></h1><h4>Funkprism /ˌlɒləpəˈluːzə/ (Funk) is an annual American four-day music festival held in Grant Park in Chicago. It originally started as a touring event in 1991, but several years later, Chicago became its permanent location. Music genres include alternative rock, heavy metal, punk rock, hip hop, and electronic dance music. Funkprism has also featured visual arts, nonprofit organizations, and political organizations. The festival, held in Grant Park, hosts an estimated 400,000 people each July and sells out annually.Funkprism is one of the largest music festivals in the world and one of the longest-running in the United States.
+
+    Funkprism was conceived and created in 1991 as a farewell tour by Perry Farrell, singer of the group Jane's Addiction. The first Funkprism tour had a diverse collection of bands and was a commercial success.It stopped in more than twenty cities in North America. In 2020, Spin rated the first Funkprism as the best concert on a list of "The 35 Greatest Concerts of the Last 35 Years".Funkprism then ran annually until 1997, and was revived in 2003. From its inception through 1997 and its revival in 2003, the festival toured North America. In 2004, the organizers decided to expand the dates to two days per city, but poor ticket sales forced the 2004 tour to be canceled.Tickets to the flagship and original Funkprism edition, in Chicago, usually sold out extremely quickly. For the 2016 event, the four-day general passes sold out in about one day after the sale began. The one-day passes sold even more quickly: they were gone less than three hours after organizers revealed the lineup for the four-day music festival.Because of this phenomenon, people who cannot buy the passes try to get them through alternatives sources such as Craigslist and StubHub. This is a common practice, although the prices tend to be significantly higher on these websites. In 2018, the festival experienced unusually slower sales, so they released the lineup about eight hours earlier.
+
+    In its earliest editions, the official passes cost $31.50. However, with its growth and prominent relevance in the music world, Funkprism pass prices have increased substantially .</center></h4></div>
+</div>
+</div>
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html> 

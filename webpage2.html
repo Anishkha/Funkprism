@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FUNKPRISM</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: auto auto;
+            background-size: cover;
+            background-color: black;
+            padding: 50px;
+        }
+        .register{
+            margin-left:2%;
+            margin-top: 3%;
+            margin-bottom: 2%;
+            opacity:0.9;
+        }
+    .title{
+        font-size: large;
+        font-family:Verdana, Geneva, Tahoma, sans-serif ;
+        font-weight: bold;
+        color:red;
+        opacity:1;
+        
+    }
+    .title1{
+        color:rgb(11, 221, 228);
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    }
+    .cont{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:white;
+    }
+        .form {
+            
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:rgb(98, 147, 190);
+  position: absolute;
+  right: 0;
+  margin: 50px;
+  margin-right: 7%;
+  max-width: 400px;
+  padding: 10px;
+  opacity:1;
+}
+input[type=text], input[type=number] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  opacity:0.6;
+  color: rgb(255, 244, 244);
+  background-color: rgba(158, 151, 151, 0.521);
+}
+
+input[type=text]:focus, input[type=number]:focus {
+  outline: none;
+}
+
+.btn {
+  background-color: rgb(98, 147, 190);
+  color: rgb(3, 3, 3);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.6;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="grid-item">    
+        <div class="register"><div class="title"><h1>TICKETS ARE GETTING SOLD OUT <br>AT A FASTER PACE!<br>Better book it right now!!</h1></div>
+        <div class="title1"><h2>We have 3 ticket types:</h2><br></div>
+            <div class="title1"><h2>TICKET 1:</h2></div>
+            <div class="cont"><h3>The ticket is the higher range ticket.Most likely a VIP TICKET.Prices starts from $500.<br>
+                In these tickets,you get any seat from the first 10 rows.<br>You get to watch your favorite singer perform in the nearest space possible.</h3></div>
+                <div class="title1"><h2>TICKET 2:</h2></div>
+                <div class="cont"><h3>The ticket is the medium range ticket.Most likely a affordable fans ticket.Prices starts from $150.<br>
+                In these tickets,you get any seat from the first 50 rows.<br>You get to watch your favorite singer perform from a little afar.</h3></div>
+                <div class="title1"><h2>TICKET 3:</h2></div>
+                <div class="cont"><h3>The ticket is the lower range ticket.Suitable for people who just come for leisure.Prices starts from<br> $50.
+                In these tickets,you get any seat from the first 100 rows.<br>You get to watch the singer perform from the screen.</h3></div>
+        </div>
+            </div>
+    <div class="grid-item">
+    <form method="POST" action="purchase.html">
+                <div class="form">
+                          <h1>GRAB YOUR FUNKPRISM TICKET!</h1>
+                          <label for="name"><b>Name</b></label>
+                          <input type="text" placeholder="Enter name" name="name" required>
+                      
+                          <label for="email"><b>Email</b></label>
+                          <input type="text" placeholder="Enter Email" name="email" required>
+                      
+                          <label for="num"><b>Phone number</b></label>
+                          <input type="number" placeholder="Enter number" name="num" required>
+                          <label for="type"><b>Ticket type</b></label>
+                          <input type="number" placeholder="Enter type" name="Ticket type" required>
+                          
+                          <button type="submit" class="btn">Get my ticket!</button></div>
+    </form>
+    </div>
+        </div>
+    </body>
+</html>
